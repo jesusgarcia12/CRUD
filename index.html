@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JESUS CALDERON GARCIA </title>
+    <script src="vendor/jquery/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <script src="vendor/validate/dist/jquery.validate.js"></script>
+    <script src="vendor/bootgrid/jquery.bootgrid.min.js"></script>
+    <script src="js/script.js"></script>
+
+
+</head>
+<body>
+<div class="container">Students Record</div>
+<div class="container">
+<form id="form001">
+    <div class="form-group">
+        <label for="idstudents">ID STUDENTS</label>
+        <input type="number" class="form-control" id="idstudents" name="idstudents" placeholder="ID STUDENTS">
+    </div>
+
+    <div class="form-group">
+        <label for="studentsname">NAME</label>
+        <input type="text" class="form-control" id="studentsname" name="studentsname" placeholder="STUDENTS NAME">
+    </div>
+
+    <div class="form-group">
+        <label for="lastname">LASTNAME</label>
+        <input type="text" class="form-control" id="lastname" name="lastname" placeholder="STUDENTS LASTNAME">
+    </div>
+
+    <div class="form-group">
+        <label for="age">AGE</label>
+        <input type="number" class="form-control" id="age" name="age" placeholder="STUDENTS AGE">
+    </div>
+
+    <div class="form-group">
+        <label for="email">EMAIL</label>
+        <input type="email" class="form-control" id="email" name="email" placeholder="STUDENTS EMAIL">
+        <h2 id="warning"></h2>
+    </div>
+
+   <input type="button" class="btn-primary" value="ADD" id="btn001" name="btn001">
+    <input type="button" class="btn-primary" value="UPDATE" id="btn002">
+    <input type="button" class="btn-primary" value="DELETE" id="btn003">
+</form>
+</div>
+
+<div class="container">
+    <table id="bgrid" class="table table-condensed table-hover table striped">
+        <thead>
+            <tr>
+                <th data-column-id="id" data-type="numeric">ID</th>
+                <th data-column-id="name">NAME</th>
+                <th data-column-id="lastname">LASTNAME</th>
+                <th data-column-id="age" data-type="numeric">AGE</th>
+                <th data-column-id="email">EMAIL</th>
+                <th data-column-id="commands" data-formatter="commands">ACTION</th>
+            </tr>
+        </thead>
+
+    </table>
+
+</div>
+
+</body>
+</html>
